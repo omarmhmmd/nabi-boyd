@@ -1,5 +1,5 @@
 <template>
-  <div id="work">
+  <!-- <div id="work">
     <div id="grid">
       <router-link to="/project"><img src="@/images/hero/005.jpg" alt=""></router-link>
       <img src="@/images/hero/001.png" alt="">
@@ -14,6 +14,23 @@
       </div>
       <img src="@/images/hero/006.jpg" alt="">
       <img src="@/images/hero/007.jpg" alt="">
+    </div>
+  </div> -->
+  <div id="work">
+    <div id="grid">
+      <router-link to="/project"><img src="https://picsum.photos/400/300" alt=""></router-link>
+      <img src="https://picsum.photos/200/300" alt="">
+      <img src="https://picsum.photos/200/200" alt="">
+      <img src="https://picsum.photos/300/300" alt="">
+    </div>
+    <div id="grid">
+      <img src="https://picsum.photos/300/300" alt="">
+      <div id="work-hover">
+        <img src="https://picsum.photos/500/300" alt="">
+        <div class="padded-multiline"><span>SHEPARD MESA HOUSE</span></div>
+      </div>
+      <img src="https://picsum.photos/300/300" alt="">
+      <img src="https://picsum.photos/300/400" alt="">
     </div>
   </div>
 </template>
@@ -77,4 +94,22 @@ img {
   color: white;
 }
 
+@media only screen and (max-width: 800px) {
+  #work {
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    width: 100vw;
+    background-color: none;
+    align-content: center;
+    padding-top: 0px;
+    z-index: -1;
+  }
+
+  img {
+    width: 45vw;
+    padding-bottom: 2.5vh;
+  }
+
+}
 </style>
