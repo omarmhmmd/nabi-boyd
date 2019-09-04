@@ -1,31 +1,77 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <app-nabi></app-nabi>
+    <transition name="fade" mode="out-in" appear>
+      <router-view></router-view>
+    </transition>
+    <app-boyd></app-boyd>
   </div>
 </template>
 
+<script>
+import Nabi from './components/Nabi.vue';
+import Boyd from './components/Boyd.vue';
+
+export default {
+  data () {
+    return {
+
+    }
+  },
+  methods: {
+
+  },
+  components: {
+    appNabi: Nabi,
+    appBoyd: Boyd,
+  }
+}
+</script>
+
 <style>
+a {
+  text-decoration: none;
+  color: black;
+}
+/**** CUSTOM FONTS ****/
+@font-face {
+  font-family: 'AKZROM';
+  src: url("./css/font/AKZROM.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'AKZLIGHT';
+  src: url("./css/font/AKZTEST.ttf") format("truetype");
+}
+/**** CUSTOM FONTS ****/
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
+  font-family: 'AKZROM';
+  display: flex;
+  /* align-items: center; */
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+@media only screen and (max-width: 800px) {
+  /* HOME */
+
+  #app {
+    font-family: 'AKZROM';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
+
 </style>
+
+<style src="./css/reset.css"></style>
