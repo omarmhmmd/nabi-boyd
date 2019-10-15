@@ -1,7 +1,8 @@
 <template lang="html">
   <div id="menu">
     <img id = "menu-img" v-bind:src="selectedImage" />
-    <div @mouseenter="changeImage" id="menu-nav">
+    <!-- <div @mouseenter="changeImage" id="menu-nav"> -->
+    <div id="menu-nav">
       <router-link to="/work"><div id="WORK">work</div></router-link>
       <router-link to="/info"><div id="INFO">ABOUT</div></router-link>
       <router-link to="/contact"><div id="CONTACT">contact</div></router-link>
@@ -36,7 +37,6 @@ export default {
         './images/LOG/LOG_018.jpg',
         './images/LOG/LOG_019.jpg',
         './images/LOG/LOG_020.jpg',
-        './images/LOG/LOG_021.jpg',
         './images/LOG/LOG_022.jpg',
         './images/LOG/LOG_023.jpg',
         './images/LOG/LOG_024.jpg',
@@ -50,7 +50,11 @@ export default {
         './images/LOG/LOG_032.jpg',
         './images/LOG/LOG_033.jpg',
         './images/LOG/LOG_034.jpg',
-        './images/LOG/LOG_035.jpg'
+        './images/LOG/LOG_035.jpg',
+        './images/LOG/LOG_036.jpg',
+        './images/LOG/LOG_037.jpg',
+        './images/LOG/LOG_038.jpg',
+        './images/LOG/LOG_039.jpg'
       ],
       selectedImage: ''
     }
@@ -58,22 +62,41 @@ export default {
   created () {
     const idx = Math.floor(Math.random() * this.images.length);
     this.selectedImage = this.images[idx]
+
+
+    var x = window.matchMedia("(max-width: 800px)")
+    console.log(x);
+    if (x.matches) { // If media query matches
+      this.interval = setInterval(() => this.changeImage(), 2500);
+      // console.log("match");
+    } else {
+      // console.log("no match");
+    }
+    // this.interval = setInterval(() => this.changeImage(), 5000);
   },
   methods: {
     changeImage(event) {
       const idx = Math.floor(Math.random() * this.images.length);
-      console.log(idx);
+      // console.log(idx);
       this.selectedImage = this.images[idx]
     }
   },
   mounted() {
-    // window.addEventListener('mousemove', this.someMethod);
+    this.$root.$on('hoverImage', () => {
+      const idx = Math.floor(Math.random() * this.images.length);
+      // console.log(idx);
+      this.selectedImage = this.images[idx]
+    })
+
+    this.$root.$emit('toMenu')
   }
 }
 </script>
 
 <style lang="css">
 #menu {
+  background-color: red;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +104,7 @@ export default {
 }
 
 #menu-img {
-  /* position: absolute; */
+  position: absolute;
   height: 40vw;
 }
 
@@ -124,11 +147,11 @@ export default {
 
 @media only screen and (max-width: 800px) {
   #menu {
-
+    height: 62.5vh;
   }
 
   #menu-img {
-    width: 90vw;
+    width: 82.5vw;
     height: auto;
   }
 

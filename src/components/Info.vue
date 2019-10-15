@@ -3,21 +3,21 @@
     <!-- <app-nabi></app-nabi> -->
     <div id="info-nest">
       <div>
-        <span>NABIBOYD</span> is a multi-disciplinary design office based in Santa Monica, California.
+        <span>NABI BOYD</span> is a multi-disciplinary design office based in Santa Monica, California.
         After years of working for distinguished architects and designers with projects ranging from
         residential and cultural buildings to product and furniture design, we started Nabi Boyd in 2018.
         We are currently working on residential and commercial projects located in Santa Barbara, Los Angeles,
         and Ventura.
       </div>
-      <hr>
+      <br>
       <div>
         <span>Mora Nabi</span> was born in Kabul, Afghanistan and grew up in the San Francisco Bay Area.
         She holds a Masters of Architecture from <a target="_blank" href="http://www.aud.ucla.edu/">UCLA</a> and
         Bachelor of Arts in Architecture from <a target="_blank" href="https://ced.berkeley.edu/academics/architecture">UC Berkeley</a>.
         Mora previously worked in the offices of <a target="_blank" href="https://www.foga.com/">Gehry Partners</a> and
-        <a target="_blank" href="https://www.ball-nogues.com/">Ball-Nogues Studio</a>
+        <a target="_blank" href="https://www.ball-nogues.com/">Ball-Nogues Studio.</a>
       </div>
-      <hr>
+      <br>
       <div>
         <span>Sean Boyd</span> grew up in Carpinteria, California. He holds a Masters of Architecture from <a target="_blank" href="http://www.aud.ucla.edu/">UCLA</a>
         and a Bachelor of Arts in English Literature from <a target="_blank" href="https://ced.berkeley.edu/academics/architecture">UC Berkeley</a>.
@@ -50,12 +50,12 @@ export default {
 
 <style lang="css">
   #info-container {
-    line-height: 4.25vh;
+    line-height: 2.25vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
     font-size: 2vw;
-    width: 60vw;
+    width: 61vw;
     height: 100vh;
   }
 
@@ -87,9 +87,9 @@ export default {
       height: auto;
       /* font-weight: bold; */
       justify-content: center;
-      line-height: 4vh;
+      line-height: 6.5vw;
       font-size: 5vw;
-      width: 90vw;
+      width: 82.5vw;
     }
 
     #info-nest {

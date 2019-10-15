@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <app-nabi></app-nabi>
-    <transition name="fade" mode="out-in" appear>
+    <app-nabi v-if = "showNB"></app-nabi>
+    <!-- <transition name="fade" mode="out-in" appear> -->
       <router-view></router-view>
-    </transition>
-    <app-boyd></app-boyd>
+    <!-- </transition> -->
+    <app-boyd v-if = "showNB"></app-boyd>
   </div>
 </template>
 
@@ -15,11 +15,22 @@ import Boyd from './components/Boyd.vue';
 export default {
   data () {
     return {
-
+      showNB: true
     }
   },
   methods: {
 
+  },
+  created() {
+    this.$root.$on('toHome', () => {
+      this.showNB = true
+    }),
+    this.$root.$on('toWork', () => {
+      this.showNB = true
+    }),
+    this.$root.$on('toProject', () => {
+      this.showNB = false
+    })
   },
   components: {
     appNabi: Nabi,
@@ -45,12 +56,17 @@ a {
 }
 /**** CUSTOM FONTS ****/
 
+
 #app {
   font-family: 'AKZROM';
   display: flex;
   /* align-items: center; */
   flex-direction: row;
   justify-content: space-between;
+}
+
+#app app-nabi {
+  display: none;
 }
 
 .fade-enter-active, .fade-leave-active {

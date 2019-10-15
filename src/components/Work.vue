@@ -1,57 +1,66 @@
 <template>
-  <!-- <div id="work">
-    <div id="grid">
-      <router-link to="/project"><img src="@/images/hero/005.jpg" alt=""></router-link>
-      <img src="@/images/hero/001.png" alt="">
-      <img src="@/images/hero/002.jpg" alt="">
-      <img src="@/images/hero/003.jpg" alt="">
-    </div>
-    <div id="grid">
-      <img src="@/images/hero/004.jpg" alt="">
-      <div id="work-hover">
-        <img src="@/images/projects/Shephard/005.jpg" alt="">
-        <div class="padded-multiline"><span>SHEPARD MESA HOUSE</span></div>
-      </div>
-      <img src="@/images/hero/006.jpg" alt="">
-      <img src="@/images/hero/007.jpg" alt="">
-    </div>
-  </div> -->
   <div id="work">
-    <div id="grid">
-      <router-link to="/project"><img src="https://picsum.photos/400/300" alt=""></router-link>
-      <img src="https://picsum.photos/200/300" alt="">
-      <img src="https://picsum.photos/200/200" alt="">
-      <img src="https://picsum.photos/300/300" alt="">
+    <div id="grid" class = "gridOne">
+      <img v-bind:src="images[0]" alt="">
+      <img v-bind:src="images[1]" alt="">
+      <img v-bind:src="images[2]" alt="">
+      <img v-bind:src="images[3]" alt="">
     </div>
-    <div id="grid">
-      <img src="https://picsum.photos/300/300" alt="">
-      <div id="work-hover">
-        <img src="https://picsum.photos/500/300" alt="">
-        <div class="padded-multiline"><span>SHEPARD MESA HOUSE</span></div>
-      </div>
-      <img src="https://picsum.photos/300/300" alt="">
-      <img src="https://picsum.photos/300/400" alt="">
+    <div id="grid" class = "gridTwo">
+      <img v-bind:src="images[5]" alt="">
+      <router-link to="/project/shepard-mesa-house" @click.native="toProject">
+        <div id="work-hover">
+          <img v-bind:src="images[4]" alt="">
+          <div class="padded-multiline"><span>SHEPARD MESA HOUSE</span></div>
+        </div>
+      </router-link>
+      <img v-bind:src="images[6]" alt="">
     </div>
   </div>
+  <!-- <div id="work">
+    <div id="coming-soon">
+      COMING SOON
+    </div>
+  </div> -->
 </template>
 
 <script>
 export default {
   data() {
     return {
-      selectedImage: ''
+      images: [
+        './images/hero/001.png',
+        './images/hero/002.jpg',
+        './images/hero/003.jpg',
+        './images/hero/004.jpg',
+        './images/hero/005.jpg',
+        './images/hero/006.jpg',
+        './images/hero/007.jpg'
+      ],
     }
+  },
+  methods: {
+
   }
 }
 </script>
 
 <style scoped>
-#work {
+#coming-soon {
+  font-size:7.5vw;
   display: flex;
   justify-content: space-around;
-  width: 65vw;
-  align-content: center;
-  padding-top: 50px;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+#work {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 70vw;
+  padding-top: 5vh;
 }
 
 #grid {
@@ -62,7 +71,7 @@ export default {
 
 img {
   width: 30vw;
-  padding-bottom: 25px;
+  padding-bottom: 5vh;
 }
 
 #work-hover {
@@ -75,7 +84,8 @@ img {
 
 .padded-multiline {
   position: absolute;
-  font-size: 50px;
+  /* background-color: red; */
+  font-size: 4.25vw;
   visibility: hidden;
   opacity: 0;
 }
@@ -95,21 +105,34 @@ img {
 }
 
 @media only screen and (max-width: 800px) {
+  #coming-soon {
+    width: 84vw;
+    height: 62.5vh;
+  }
+
   #work {
+    /* height: 62.5vh; */
     display: flex;
-    height: auto;
     justify-content: space-around;
-    width: 100vw;
+    /* width: 100vw; */
     background-color: none;
+    align-items: center;
     align-content: center;
     padding-top: 0px;
-    z-index: -1;
+    flex-direction: column;
   }
 
   img {
-    width: 45vw;
-    padding-bottom: 2.5vh;
+    width: 90vw;
+    padding-bottom:5vh;
   }
 
+  .padded-multiline {
+    position: absolute;
+    /* background-color: red; */
+    font-size: 13.5vw;
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 </style>
