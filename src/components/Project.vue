@@ -3,52 +3,27 @@
   <div id="project-page">
     <div id="project-splash">
       <div id="header">
-        <router-link to="/" @click.native="toHome">
+        <router-link to="/">
           <h1>NABIBOYD</h1>
         </router-link>
-        <router-link to="/work" @click.native="toHome">
+        <a @click="$router.go(-1)">
           <div id="back-button">
             <img id = "arrow" v-bind:src="arrow" alt="">
             <div id="">WORK</div>
           </div>
-        </router-link>
+        </a>
       </div>
-      <!-- <div id="image-container"> -->
-        <!-- <img src="@/images/projects/Shephard/001.jpg" alt=""> -->
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <!-- <img v-bind:src="images[0]" alt=""> -->
-              <img v-bind:src='projectJson.projects[thisProject].IMAGES[0]' alt="">
-            </div>
-            <div class="swiper-slide">
-              <!-- <img v-bind:src="images[1]" alt=""> -->
-              <img v-bind:src='projectJson.projects[thisProject].IMAGES[1]' alt="">
-            </div>
-            <div class="swiper-slide">
-              <!-- <img v-bind:src="images[2]" alt=""> -->
-              <img v-bind:src='projectJson.projects[thisProject].IMAGES[2]' alt="">
-            </div>
-            <div class="swiper-slide">
-              <!-- <img v-bind:src="images[3]" alt=""> -->
-              <img v-bind:src='projectJson.projects[thisProject].IMAGES[3]' alt="">
-            </div>
-            <div class="swiper-slide">
-              <!-- <img v-bind:src="images[4]" alt=""> -->
-              <img v-bind:src='projectJson.projects[thisProject].IMAGES[4]' alt="">
-            </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div v-for = "(image, index) in projectJson.projects[thisProject].IMAGES" class="swiper-slide">
+            <img v-bind:src='projectJson.projects[thisProject].IMAGES[index]' alt="">
           </div>
-          <!-- Add Pagination -->
-          <!-- <div class="swiper-pagination"></div> -->
-          <!-- Add Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
         </div>
-      <!-- </div> -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
       <div id="footer">
-        <!-- <div id = "project-title">SHEPARD MESA HOUSE</div> -->
         <div id = "project-title">{{projectJson.projects[thisProject].NAME}}</div>
-        <!-- <h2>5/6</h2> -->
         <div class="swiper-pagination"></div>
       </div>
     </div>
@@ -58,67 +33,35 @@
           <div class="data-column">
             <div>
               <h1 class="data-type">CLIENT</h1>
-              <!-- <h2 class="data-type-info">Self-Initiated</h2> -->
               <h2 class="data-type-info">{{projectJson.projects[thisProject].CLIENT}}</h2>
             </div>
             <div>
               <h1 class="data-type">YEAR</h1>
-              <!-- <h2 class="data-type-info">2016-2019</h2> -->
               <h2 class="data-type-info">{{projectJson.projects[thisProject].YEAR}}</h2>
             </div>
             <div>
               <h1 class="data-type">TYPE</h1>
-              <!-- <h2 class="data-type-info">Single Family</h2> -->
-                <h2 class="data-type-info">{{projectJson.projects[thisProject].TYPE}}</h2>
+              <h2 class="data-type-info">{{projectJson.projects[thisProject].TYPE}}</h2>
             </div>
             <div>
               <h1 class="data-type">LOCATION</h1>
-              <!-- <h2 class="data-type-info">Carpinteria, CA</h2> -->
               <h2 class="data-type-info">{{projectJson.projects[thisProject].LOCATION}}</h2>
             </div>
             <div>
               <h1 class="data-type">SITE AREA</h1>
-              <!-- <h2 class="data-type-info">38,000 sf</h2> -->
-                <h2 class="data-type-info">{{projectJson.projects[thisProject].SITEAREA}}</h2>
+              <h2 class="data-type-info">{{projectJson.projects[thisProject].SITEAREA}}</h2>
             </div>
             <div>
               <h1 class="data-type">FLOOR AREA</h1>
-              <!-- <h2 class="data-type-info">1,800 sf</h2> -->
-                <h2 class="data-type-info">{{projectJson.projects[thisProject].SIZE}}</h2>
+              <h2 class="data-type-info">{{projectJson.projects[thisProject].SIZE}}</h2>
             </div>
           </div>
-          <!-- <div class="data-column">
-              <div>
-                <h1 class="data-type">LOCATION</h1>
-                <h2>Carpinteria, CA</h2>
-              </div>
-              <div>
-                <h1 class="data-type">SITE AREA</h1>
-                <h2>38,000 sf</h2>
-              </div>
-              <div>
-                <h1 class="data-type">FLOOR AREA</h1>
-                <h2>1,800 sf</h2>
-              </div>
-            </div> -->
         </div>
           <div id="description">
-              <div class="data-type">INFO</div>
-              <div id="text">
-                <!-- <div>Shepard Mesa House is a new single family home situated on a steep Cherimoya orchard in the foothills
-                of Carpinteria designed for a family of four.  The neighborhood consists of dispersed homes along a single
-                road leading up and around the crown of the hill with steep slopes on all sides.
-                Sited diagonally to the contours of the hill, the house slopes with the natural fall of the land with the
-                program gathered under a single gabled roof above.  The house is organized across three levels which correspond to the slope of the land.
-                </div>
-
-                <div class = "indent">The experience of moving through the site and house is synchronized--one gets the experience of being both inside the orchard and above it.
-                Bedrooms are located at the lower elevations where they are nestled into the working orchard around them.  At this elevation, the cherimoya trees
-                provide the most privacy as the coastal hills peek out above and through them.  The main space on the upper tier opens up to the downslope and affords
-                the most expansive views.  Neighboring homes are just out of sight as the view stretches out across the valley to the backside of Rincon Mountain.
-              </div> -->
+            <div class="data-type">INFO</div>
+            <div id="text">
               {{projectJson.projects[thisProject].DESCRIPTION}}
-              </div>
+            </div>
           </div>
       </div>
     </div>
@@ -134,19 +77,15 @@ export default {
     return {
       projectJson,
       projectId: this.$route.params.id,
-      thisProject: 1,
+      thisProject:'',
       arrow: "./images/SVG/arrow0.svg"
     }
   },
-  methods: {
-    toWork: function() {
-      this.$root.$emit('toWork')
-    },
-    toHome: function() {
-      this.$root.$emit('toHome')
-    }
-  },
-  mounted() {
+  created() {
+    /**** SET PROJECT PAGE REFRESH ****/
+    this.$root.$emit('hideNB')
+    /**** END PROJECT PAGE REFRESH ****/
+
     /**** SET PROJECT ID ****/
     for (var i = 0; i < projectJson.projects.length; i++) {
       if (this.projectId == projectJson.projects[i].TAG) {
@@ -154,11 +93,11 @@ export default {
       }
     }
     /**** END PROJECT ID ****/
-
-    /**** SET PROJECT PAGE REFRESH ****/
-    this.$root.$emit('toProject')
-    /**** END PROJECT PAGE REFRESH ****/
-
+  },
+  destroyed() {
+    this.$root.$emit('showNB')
+  },
+  mounted() {
     /**** SET IMAGE SWIPER ****/
     var swiper = new Swiper('.swiper-container', {
       pagination: {
@@ -178,6 +117,9 @@ export default {
 
 
 <style>
+a:hover {
+  cursor: pointer;
+}
 #project-container {
   display: flex;
   justify-content: center;
@@ -257,7 +199,7 @@ export default {
 }
 
 #project-info {
-  /* padding-bottom: 10vh; */
+  padding-bottom: 5vh;
 }
 
 #data {
@@ -308,11 +250,16 @@ export default {
 
 @media only screen and (max-width: 800px) {
   #project-splash {
-    height: 87.5vh;
+    padding-top: 2vh;
+    height: 82.5vh;
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
   }
 
   #header {
-    font-size: 3vh;
+    position: relative;
+    font-size: 3.75vh;
   }
 
   #arrow {
@@ -323,7 +270,6 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* font-size: 2.25vw; */
   }
 
   .swiper-pagination {
@@ -340,7 +286,7 @@ export default {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 15vh;
+    width: 17.5vh;
     justify-content: space-between;
   }
 
@@ -359,6 +305,7 @@ export default {
 
   #data-box {
     display: flex;
+    padding-top: 5vh;
     flex-direction: column;
   }
 

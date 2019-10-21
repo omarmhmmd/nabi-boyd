@@ -22,13 +22,10 @@ export default {
 
   },
   created() {
-    this.$root.$on('toHome', () => {
+    this.$root.$on('showNB', () => {
       this.showNB = true
     }),
-    this.$root.$on('toWork', () => {
-      this.showNB = true
-    }),
-    this.$root.$on('toProject', () => {
+    this.$root.$on('hideNB', () => {
       this.showNB = false
     })
   },

@@ -3,12 +3,17 @@
     <div id="grid" class = "gridOne">
       <img v-bind:src="images[0]" alt="">
       <img v-bind:src="images[1]" alt="">
-      <img v-bind:src="images[2]" alt="">
+      <router-link to="/work/kno-beverage-house">
+        <div id="work-hover">
+          <img v-bind:src="images[2]" alt="">
+          <div class="padded-multiline"><span>KNO BEVERAGE HOUSE</span></div>
+        </div>
+      </router-link>
       <img v-bind:src="images[3]" alt="">
     </div>
     <div id="grid" class = "gridTwo">
       <img v-bind:src="images[5]" alt="">
-      <router-link to="/project/shepard-mesa-house" @click.native="toProject">
+      <router-link to="/work/shepard-mesa-house">
         <div id="work-hover">
           <img v-bind:src="images[4]" alt="">
           <div class="padded-multiline"><span>SHEPARD MESA HOUSE</span></div>
@@ -17,11 +22,6 @@
       <img v-bind:src="images[6]" alt="">
     </div>
   </div>
-  <!-- <div id="work">
-    <div id="coming-soon">
-      COMING SOON
-    </div>
-  </div> -->
 </template>
 
 <script>
@@ -39,22 +39,10 @@ export default {
       ],
     }
   },
-  methods: {
-
-  }
 }
 </script>
 
 <style scoped>
-#coming-soon {
-  font-size:7.5vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: black;
-  color: white;
-}
-
 #work {
   display: flex;
   align-items: flex-start;
@@ -105,11 +93,6 @@ img {
 }
 
 @media only screen and (max-width: 800px) {
-  #coming-soon {
-    width: 84vw;
-    height: 62.5vh;
-  }
-
   #work {
     /* height: 62.5vh; */
     display: flex;

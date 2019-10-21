@@ -1,7 +1,6 @@
 <template lang="html">
   <div id="menu">
     <img id = "menu-img" v-bind:src="selectedImage" />
-    <!-- <div @mouseenter="changeImage" id="menu-nav"> -->
     <div id="menu-nav">
       <router-link to="/work"><div id="WORK">work</div></router-link>
       <router-link to="/info"><div id="INFO">ABOUT</div></router-link>

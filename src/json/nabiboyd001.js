@@ -10,6 +10,11 @@ export default {
         "./images/projects/Kno/003.gif",
         "./images/projects/Kno/004_black.gif",
         "./images/projects/Kno/004_white.gif",
+        "./images/projects/Kno/005.jpg",
+        "./images/projects/Kno/006.jpg",
+        "./images/projects/Kno/007.jpg",
+        "./images/projects/Kno/008.jpg",
+        "./images/projects/Kno/009.jpg",
       ],
       "LOCATION": "Escondido, CA",
       "YEAR": 2018,
@@ -39,6 +44,7 @@ export default {
       "DESCRIPTION": "Located on a steep Cherimoya orchard in the foothills of Carpinteria, Shepard Mesa House is a new home for a young family of four. The neighborhood consists of dispersed homes along a single road leading up and around the crown of the hill.\n Sited diagonally to the contours of the hill, the house slopes with the natural fall of the land. Interior functions at three levels are gathered under a large gable roof. Bedrooms at the lower elevations are nestled into the working orchard around them where the trees provide the most privacy. The living room, dining area and kitchen on the upper level opens downslope and affords the most expansive views. Neighboring homes are just out of sight as the view stretches out across the valley to the backside of Rincon Mountain.\nThe siting, orientation, and plan take advantage of natural light and ventilation reducing the reliance on mechanical systems and creating a living experience in harmony with the site."
     },
     {
+      "TAG": "adu-for-an-artist",
       "PROJECT": 3,
       "NAME": "ADU FOR AN ARTIST",
       "LOCATION": "Los Angeles, CA",
@@ -50,6 +56,7 @@ export default {
       "DESCRIPTION": "ADU for an Artist is an accessory dwelling unit designed as a flexible space that can be used for living, working, exhibiting, and storage. The space is open and adaptable with large north-facing sliding doors opening onto a garden. Three large light wells span across the main space from wall to wall. \nThe building is clad in metal shingles for fire resistance as well as a nod to the material repetition of the existing masonry home. An asymmetrical roof creates an efficient attic space above the kitchen and bathroom. Native grasses slip under and sway against the stepped foundation and floating deck, giving a lightness to the building and continuity to the landscape around it."
     },
     {
+      "TAG": "pacific-ave-remodel",
       "PROJECT": 4,
       "NAME": "PACIFIC AVE REMODEL",
       "LOCATION": "Playa Del Rey, CA",
@@ -61,6 +68,7 @@ export default {
       "DESCRIPTION": "Pacific Ave Remodel is a renovation of an existing 1978 condominium overlooking the entrance to the Marina Del Rey harbor. The one-bedroom condo becomes a one-and-a-half bedroom with the addition of a custom built-in murphy bed. A large swing door conceals the fold-out bed and transforms into a wall when open. New guardrails, finishes, lighting, and flooring are designed throughout with a nod to the character of the building and site."
     },
     {
+      "TAG": "ventura-houses",
       "PROJECT": 5,
       "NAME": "VENTURA HOUSES",
       "LOCATION": "Ventura, CA",
@@ -72,6 +80,7 @@ export default {
       "DESCRIPTION": ""
     },
     {
+      "TAG": "los-osos-guest-house",
       "PROJECT": 6,
       "NAME": "LOS OSOS GUEST HOUSE",
       "LOCATION": "Los Osos, CA",

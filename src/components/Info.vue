@@ -1,6 +1,5 @@
 <template lang="html">
   <div id="info-container">
-    <!-- <app-nabi></app-nabi> -->
     <div id="info-nest">
       <div>
         <span>NABI BOYD</span> is a multi-disciplinary design office based in Santa Monica, California.
@@ -24,13 +23,10 @@
         Sean previously worked in the office of <a target="_blank" href="http://glform.com/">Greg Lynn FORM</a> where he led building and design projects for Nike, Swarovski, and Google among others.
       </div>
     </div>
-    <!-- <app-boyd></app-boyd> -->
   </div>
 </template>
 
 <script>
-// import Nabi from './Nabi.vue';
-// import Boyd from './Boyd.vue';
 
 export default {
   data () {
@@ -41,10 +37,6 @@ export default {
   methods: {
 
   },
-  // components: {
-  //   appNabi: Nabi,
-  //   appBoyd: Boyd,
-  // }
 }
 </script>
 
