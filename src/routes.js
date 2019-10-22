@@ -9,7 +9,7 @@ import Project from './components/Project.vue';
 export const routes = [
   {path: '/', component: Menu},
   {path: '/contact', component: Contact},
-  {path: '/info', component: Info},
+  {path: '/about', component: Info},
   {path: '/work', component: Work},
   // {path: '/project', component: Project},
   {path: '/work/:id', component: Project},

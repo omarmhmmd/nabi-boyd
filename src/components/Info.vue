@@ -81,7 +81,7 @@ export default {
       justify-content: center;
       line-height: 6.5vw;
       font-size: 5vw;
-      width: 82.5vw;
+      width: 90vw;
     }
 
     #info-nest {

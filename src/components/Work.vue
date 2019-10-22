@@ -1,121 +1,106 @@
 <template>
-  <div id="work">
-    <div id="grid" class = "gridOne">
-      <img v-bind:src="images[0]" alt="">
-      <img v-bind:src="images[1]" alt="">
-      <router-link to="/work/kno-beverage-house">
-        <div id="work-hover">
-          <img v-bind:src="images[2]" alt="">
-          <div class="padded-multiline"><span>KNO BEVERAGE HOUSE</span></div>
+  <div id="work-container">
+    <div v-for = "(image, index) in workJson.works" id="work">
+      <router-link :to="{path:'/work/' + workJson.works[index].TAG}">
+        <div id="work-block" :style="{ backgroundImage: `url(${workJson.works[index].IMAGE})` }">
+          <div class="block-multiline"><span>{{workJson.works[index].NAME}}</span></div>
+        </div>
+        <div id="work-block-mobile">
+          <div class="block-multiline"><span>{{workJson.works[index].NAME}}</span></div>
         </div>
       </router-link>
-      <img v-bind:src="images[3]" alt="">
-    </div>
-    <div id="grid" class = "gridTwo">
-      <img v-bind:src="images[5]" alt="">
-      <router-link to="/work/shepard-mesa-house">
-        <div id="work-hover">
-          <img v-bind:src="images[4]" alt="">
-          <div class="padded-multiline"><span>SHEPARD MESA HOUSE</span></div>
-        </div>
-      </router-link>
-      <img v-bind:src="images[6]" alt="">
     </div>
   </div>
 </template>
 
 <script>
+import workJson from '../json/nabiboyd001_work.js'
+
 export default {
   data() {
     return {
-      images: [
-        './images/hero/001.png',
-        './images/hero/002.jpg',
-        './images/hero/003.jpg',
-        './images/hero/004.jpg',
-        './images/hero/005.jpg',
-        './images/hero/006.jpg',
-        './images/hero/007.jpg'
-      ],
+      workJson
     }
   },
 }
 </script>
 
 <style scoped>
-#work {
+#work-container {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-  width: 70vw;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding-top: 5vh;
+  height: auto;
+  padding-left: 3.5vw;
 }
 
-#grid {
+#work-block {
   display: flex;
-  flex-direction: column;
   align-items: center;
-}
-
-img {
-  width: 30vw;
-  padding-bottom: 5vh;
-}
-
-#work-hover {
-  display: flex;
   justify-content: flex-start;
-  align-items: center;
-  align-content: flex-start;
+  width: 30vw;
+  height: 21vw;
+  margin-bottom: 5vh;
+  background-size: 0%;
+}
+
+#work-block-mobile {
+  display: none;
+}
+
+#work-block:hover {
+  background-position: center; /* Center the image */
+  background-size: 150%;
+  background-repeat: no-repeat;
+}
+
+.block-multiline {
+  padding-left: 1vw;
   position: relative;
+  font-size: 5vw;
 }
 
-.padded-multiline {
-  position: absolute;
-  /* background-color: red; */
-  font-size: 4.25vw;
-  visibility: hidden;
-  opacity: 0;
-}
-
-#work-hover:hover .padded-multiline {
-  visibility: visible;
-  opacity: 1;
-}
-
-#work-hover:hover img {
-  opacity: 0;
-}
-
-.padded-multiline span {
+.block-multiline span {
   background-color: black;
   color: white;
 }
 
 @media only screen and (max-width: 800px) {
-  #work {
-    /* height: 62.5vh; */
+  #work-container {
     display: flex;
-    justify-content: space-around;
-    /* width: 100vw; */
-    background-color: none;
-    align-items: center;
-    align-content: center;
-    padding-top: 0px;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 5vh;
+    height: auto;
+    padding-left: 0vw;
   }
 
-  img {
-    width: 90vw;
-    padding-bottom:5vh;
+  #work-block {
+    display: none;
   }
 
-  .padded-multiline {
-    position: absolute;
-    /* background-color: red; */
-    font-size: 13.5vw;
-    visibility: hidden;
-    opacity: 0;
+  #work-block-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 85vw;
+    height: auto;
+    margin-bottom: 10vh;
+    background-size: 0%;
+  }
+
+  .block-multiline {
+    padding-left: 0vw;
+    position: relative;
+    font-size: 15vw;
+  }
+
+  .block-multiline span {
+    background-color: black;
+    color: white;
   }
 }
 </style>

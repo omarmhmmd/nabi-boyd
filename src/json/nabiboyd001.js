@@ -20,7 +20,7 @@ export default {
       "YEAR": 2018,
       "TYPE": "Commercial & Brand Identity",
       "SIZE": "3000 SF",
-      "SITEAREA": "3000 SF",
+      "SITEAREA": "3000 FT",
       "CLIENT": "Seven Beverages, Inc",
       "DESCRIPTION": "Knø Beverage House is a new bar and cafe in Escondido, California.  Created as a reaction to the overcrowded microbrew and coffee culture of Southern California, Knø encapsulates a playful spirit of unpretentious aficionados.\nNabi Boyd designed the architecture, interiors, identity, and graphics to create a cohesive design across various media. This included producing a family of logos that worked for the various products under the Knø brand (beer, coffee, bar/café) as well as stationary, merchandise, and ephemera.\nThe Beverage House itself comprises a long, narrow masonry building on a busy street in downtown Escondido.  New doors and windows on the building ends and skylights brighten the previously dark space. A mix of high and low materials fit with the brand vibe and embrace a casual but discerning, kid-friendly but sometimes rowdy crowd. The rear patio evokes a gabled village from the outside and is made up of a modular system of slatted structures that create various shade conditions and apertures to the sky."
     },
@@ -92,6 +92,7 @@ export default {
       "DESCRIPTION": "Los Osos Guest House is located near the eastern shore of Morro Bay. The client, a woman living on a property with her son and his young family, wanted independence while maintaining a connection to the main house. A bathing room with a view and direct sunlight would become a place where she would spend much of her time. \nThe guest house is an efficient one-bedroom unit that uses cut-in atria to separate spaces and create pockets of exterior inside. The large bathroom with a freestanding tub and direct access to a private garden creates a bright and natural experience where one could spend all day."
     },
     {
+      "TAG": "silverlake-remodel",
       "PROJECT": 7,
       "NAME": "SILVERLAKE REMODEL",
       "LOCATION": "Silverlake, CA",
@@ -125,6 +126,7 @@ export default {
       "DESCRIPTION": "Designed for the arts education non-profit Barnsdall Arts, the poster also serves as an instructional handout for a children’s workshop on crafting three-dimensional insects. The illustrated insects are graphically coded to insect body parts, teaching children about specific characteristics and encouraging creativity."
     },
     {
+      "TAG": "loop-clip",
       "PROJECT": 10,
       "NAME": "LOOP CLIP",
       "LOCATION": "--",
@@ -136,6 +138,7 @@ export default {
       "DESCRIPTION": "Ongoing furniture experiments with a versatile piece of hardware designed by Nabi Boyd."
     },
     {
+      "TAG": "courtyard-table",
       "PROJECT": 11,
       "NAME": "COURTYARD TABLE",
       "LOCATION": "Santa Monica, CA",

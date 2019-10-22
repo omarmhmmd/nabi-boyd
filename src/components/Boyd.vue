@@ -12,7 +12,7 @@
         <div class="menuChoice">{{optionO}}</div>
       </div>
     </router-link>
-    <router-link to="/info">
+    <router-link to="/about">
       <div class="menuOption" v-on:mouseenter="hoverImage()" v-on:mouseover="mouseover('Y','ABOUT')" v-on:mouseleave="mouseleave('Y','ABOUT')">
         <div class="letter">{{letterY}}</div>
         <div class="menuChoice">{{optionY}}</div>

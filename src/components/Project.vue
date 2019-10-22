@@ -32,8 +32,8 @@
         <div id="data">
           <div class="data-column">
             <div>
-              <h1 class="data-type">CLIENT</h1>
-              <h2 class="data-type-info">{{projectJson.projects[thisProject].CLIENT}}</h2>
+              <h1 class="data-type">LOCATION</h1>
+              <h2 class="data-type-info">{{projectJson.projects[thisProject].LOCATION}}</h2>
             </div>
             <div>
               <h1 class="data-type">YEAR</h1>
@@ -44,16 +44,16 @@
               <h2 class="data-type-info">{{projectJson.projects[thisProject].TYPE}}</h2>
             </div>
             <div>
-              <h1 class="data-type">LOCATION</h1>
-              <h2 class="data-type-info">{{projectJson.projects[thisProject].LOCATION}}</h2>
+              <h1 class="data-type">SIZE</h1>
+              <h2 class="data-type-info">{{projectJson.projects[thisProject].SIZE}}</h2>
             </div>
             <div>
               <h1 class="data-type">SITE AREA</h1>
               <h2 class="data-type-info">{{projectJson.projects[thisProject].SITEAREA}}</h2>
             </div>
             <div>
-              <h1 class="data-type">FLOOR AREA</h1>
-              <h2 class="data-type-info">{{projectJson.projects[thisProject].SIZE}}</h2>
+              <h1 class="data-type">CLIENT</h1>
+              <h2 class="data-type-info">{{projectJson.projects[thisProject].CLIENT}}</h2>
             </div>
           </div>
         </div>
@@ -98,6 +98,10 @@ export default {
     this.$root.$emit('showNB')
   },
   mounted() {
+    /**** SET PROJECT PAGE REFRESH ****/
+    this.$root.$emit('hideNB')
+    /**** END PROJECT PAGE REFRESH ****/
+    
     /**** SET IMAGE SWIPER ****/
     var swiper = new Swiper('.swiper-container', {
       pagination: {
