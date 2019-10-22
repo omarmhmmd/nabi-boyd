@@ -78,7 +78,7 @@ export default {
       projectJson,
       projectId: this.$route.params.id,
       thisProject:'',
-      arrow: "./images/SVG/arrow0.svg"
+      arrow: "/images/SVG/arrow0.svg"
     }
   },
   created() {
@@ -101,7 +101,7 @@ export default {
     /**** SET PROJECT PAGE REFRESH ****/
     this.$root.$emit('hideNB')
     /**** END PROJECT PAGE REFRESH ****/
-    
+
     /**** SET IMAGE SWIPER ****/
     var swiper = new Swiper('.swiper-container', {
       pagination: {
