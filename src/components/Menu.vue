@@ -3,7 +3,7 @@
     <img id = "menu-img" v-bind:src="selectedImage" />
     <div id="menu-nav">
       <router-link to="/work"><div id="WORK">work</div></router-link>
-      <router-link to="/info"><div id="INFO">ABOUT</div></router-link>
+      <router-link to="/about"><div id="INFO">ABOUT</div></router-link>
       <router-link to="/contact"><div id="CONTACT">contact</div></router-link>
       <a target= "_blank" href="https://www.instagram.com/nabiboyd/"><div>@nabiboyd</div></a>
     </div>

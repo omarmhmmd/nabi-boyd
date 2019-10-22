@@ -78,7 +78,7 @@ export default {
       projectJson,
       projectId: this.$route.params.id,
       thisProject:'',
-      arrow: "/images/SVG/arrow0.svg"
+      arrow: "./images/SVG/arrow0.svg"
     }
   },
   created() {
@@ -305,6 +305,18 @@ a:hover {
     display: flex;
     justify-content: center;
     /* padding-top: 20vh; */
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    z-index: 10;
+    /* background-size: 27px 44px;
+    background-position: 50%;
+    background-repeat: no-repeat; */
   }
 
   #data-box {

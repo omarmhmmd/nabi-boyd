@@ -60,6 +60,8 @@ export default {
   padding-left: 1vw;
   position: relative;
   font-size: 5vw;
+  width: 75%;
+  /* background-color: red; */
 }
 
 .block-multiline span {
@@ -96,6 +98,8 @@ export default {
     padding-left: 0vw;
     position: relative;
     font-size: 15vw;
+    width: 85%;
+    /* background-color: red; */
   }
 
   .block-multiline span {

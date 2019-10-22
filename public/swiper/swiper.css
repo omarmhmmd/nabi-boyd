@@ -145,10 +145,13 @@
   width: 30%;
   height: 100%;
   z-index: 10;
-  background-size: 27px 44px;
+  /* background-size: 27px 44px;
   background-position: 50%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
+
+.swiper-button-prev,
+.swiper-button-next:focus {outline:0;}
 
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
@@ -163,11 +166,11 @@
 }
 
 .swiper-button-prev:hover {
-  cursor: url(arrow_1.png), crosshair;
+  cursor: url(arrow_1.png), pointer;
 }
 
 .swiper-button-next:hover {
-  cursor: url(arrow_2.png), crosshair;
+  cursor: url(arrow_2.png), pointer;
 }
 
 .swiper-button-prev,
