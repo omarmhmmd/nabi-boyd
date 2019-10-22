@@ -5,7 +5,7 @@ export default {
       "PROJECT": 1,
       "NAME": "KNØ BEVERAGE HOUSE",
       "IMAGES": [
-        "./images/projects/Kno/001.jpg",
+        "/images/projects/Kno/001.jpg",
         "./images/projects/Kno/002.jpg",
         "./images/projects/Kno/003.gif",
         "./images/projects/Kno/004_black.gif",
