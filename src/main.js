@@ -1,13 +1,13 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router';
 import App from './App.vue'
+
+import VueRouter from 'vue-router';
 import {routes} from './routes';
+Vue.use(VueRouter);
 
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import '../public/swiper/swiper.css'
 Vue.use(VueAwesomeSwiper)
-
-Vue.use(VueRouter);
 
 const router = new VueRouter({
   routes,

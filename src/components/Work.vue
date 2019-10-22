@@ -1,12 +1,12 @@
 <template>
   <div id="work-container">
-    <div v-for = "(image, index) in workJson.works" id="work">
-      <router-link :to="{path:'/work/' + workJson.works[index].TAG}">
-        <div id="work-block" :style="{ backgroundImage: `url(${workJson.works[index].IMAGE})` }">
-          <div class="block-multiline"><span>{{workJson.works[index].NAME}}</span></div>
+    <div v-for = "(image, index) in workJson.projects" id="work">
+      <router-link :to="{path:'/work/' + workJson.projects[index].TAG}">
+        <div id="work-block" :style="{ backgroundImage: `url(${workJson.projects[1].IMAGES[0]})` }">
+          <div class="block-multiline"><span>{{workJson.projects[index].NAME}}</span></div>
         </div>
         <div id="work-block-mobile">
-          <div class="block-multiline"><span>{{workJson.works[index].NAME}}</span></div>
+          <div class="block-multiline"><span>{{workJson.projects[index].NAME}}</span></div>
         </div>
       </router-link>
     </div>
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import workJson from '../json/nabiboyd001_work.js'
+import workJson from '../json/nabiboyd001.js'
 
 export default {
   data() {

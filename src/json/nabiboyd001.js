@@ -94,7 +94,7 @@ export default {
     {
       "TAG": "silverlake-remodel",
       "PROJECT": 7,
-      "NAME": "SILVERLAKE REMODEL",
+      "NAME": "SILVER LAKE REMODEL",
       "LOCATION": "Silverlake, CA",
       "YEAR": "2019-Ongoing",
       "TYPE": "Residential",
@@ -105,7 +105,7 @@ export default {
     },
     {
       "PROJECT": 8,
-      "NAME": "LETTERFORMS",
+      "NAME": "LETTER-FORMS",
       "LOCATION": "--",
       "YEAR": "Ongoing",
       "TYPE": "Graphic Design",
@@ -140,7 +140,7 @@ export default {
     {
       "TAG": "courtyard-table",
       "PROJECT": 11,
-      "NAME": "COURTYARD TABLE",
+      "NAME": "COURT-YARD TABLE",
       "LOCATION": "Santa Monica, CA",
       "YEAR": 2018,
       "TYPE": "Furniture",
