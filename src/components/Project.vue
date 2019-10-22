@@ -93,14 +93,6 @@ export default {
       }
     }
     /**** END PROJECT ID ****/
-  },
-  destroyed() {
-    this.$root.$emit('showNB')
-  },
-  mounted() {
-    /**** SET PROJECT PAGE REFRESH ****/
-    this.$root.$emit('hideNB')
-    /**** END PROJECT PAGE REFRESH ****/
 
     /**** SET IMAGE SWIPER ****/
     var swiper = new Swiper('.swiper-container', {
@@ -115,6 +107,14 @@ export default {
       },
     });
     /**** END IMAGE SWIPER ****/
+  },
+  destroyed() {
+    this.$root.$emit('showNB')
+  },
+  mounted() {
+    /**** SET PROJECT PAGE REFRESH ****/
+    this.$root.$emit('hideNB')
+    /**** END PROJECT PAGE REFRESH ****/
   }
 }
 </script>
