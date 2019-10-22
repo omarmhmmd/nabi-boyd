@@ -8,37 +8,37 @@ export default {
     },
     {
       "TAG": "shepard-mesa-house",
-      "PROJECT": 5,
+      "PROJECT": 2,
       "NAME": "SHEPARD MESA HOUSE",
       "IMAGE": "./images/hero/005.jpg"
     },
     {
       "TAG": "pacific-ave-remodel",
-      "PROJECT": 4,
+      "PROJECT": 3,
       "NAME": "PACIFIC AVE REMODEL",
       "IMAGE": "./images/hero/004.jpg"
     },
     {
       "TAG": "ventura-houses",
-      "PROJECT": 7,
+      "PROJECT": 4,
       "NAME": "VENTURA HOUSES",
       "IMAGE": "./images/hero/007.jpg"
     },
     {
       "TAG": "silverlake-remodel",
-      "PROJECT": 6,
+      "PROJECT": 5,
       "NAME": "SILVER LAKE REMODEL",
       "IMAGE": "./images/hero/006.jpg"
     },
     {
       "TAG": "loop-clip",
-      "PROJECT": 1,
+      "PROJECT": 6,
       "NAME": "LOOP CLIP",
       "IMAGE": "./images/hero/001.png"
     },
     {
       "TAG": "courtyard-table",
-      "PROJECT": 2,
+      "PROJECT": 7,
       "NAME": "COURT-YARD TABLE",
       "IMAGE": "./images/hero/002.jpg"
     },
