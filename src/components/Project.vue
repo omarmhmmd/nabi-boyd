@@ -14,11 +14,11 @@
         </a>
       </div>
       <div class="swiper-container">
-        <div class="swiper-wrapper">
+        <swiper :options="swiperOption">
           <div v-for = "(image, index) in projectJson.projects[thisProject].IMAGES" class="swiper-slide">
             <img v-bind:src='projectJson.projects[thisProject].IMAGES[index]' alt="">
           </div>
-        </div>
+        </swiper>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
@@ -76,6 +76,19 @@ export default {
   data() {
     return {
       projectJson,
+      /**** SET IMAGE SWIPER ****/
+      swiperOption: {
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'fraction',
+        },
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }
+      },
+      /**** END IMAGE SWIPER ****/
       projectId: this.$route.params.id,
       thisProject:'',
       arrow: "/images/SVG/arrow0.svg"
@@ -93,20 +106,6 @@ export default {
       }
     }
     /**** END PROJECT ID ****/
-
-    /**** SET IMAGE SWIPER ****/
-    var swiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'fraction',
-      },
-      loop: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-    /**** END IMAGE SWIPER ****/
   },
   destroyed() {
     this.$root.$emit('showNB')
