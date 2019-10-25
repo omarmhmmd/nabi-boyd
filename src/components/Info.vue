@@ -73,7 +73,7 @@ export default {
     background-color: black;
   }
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 768px) and (orientation : portrait) {
     #info-container {
       display: flex;
       height: auto;

@@ -76,7 +76,7 @@ export default {
   } */
 
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 768px)  and (orientation : portrait) {
     #contact-container {
       height: 62.5vh;
     }

@@ -251,7 +251,7 @@ a:hover {
   text-indent: 5.5vw;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   #project-splash {
     padding-top: 2vh;
     height: 82.5vh;
@@ -311,7 +311,7 @@ a:hover {
     position: absolute;
     top: 0;
     width: 0%;
-    height: 100%;
+    height: 0%;
     z-index: 10;
     /* background-size: 27px 44px;
     background-position: 50%;
@@ -365,6 +365,59 @@ a:hover {
 
   .data-type-info {
     font-size: 6vw;
+  }
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (orientation : landscape) {
+  #header {
+    font-size: 3.5vw;
+  }
+
+  #back-button {
+    width: 15vw;
+  }
+
+  #data {
+    width: 17.5vw;
+  }
+
+  .data-column div {
+    padding-bottom: 2vh;
+    line-height: 25px;
+  }
+
+  h1, h2 {
+    line-height: 15px;
+  }
+
+  .data-type {
+    padding-top: 5vh;
+    display: inline;
+    background-color: black;
+    color: white;
+    padding: 0 3.5px 0 3.5px;
+    font-size: 2.25vw;
+  }
+
+  .data-type-info {
+    font-size: 2.25vw;
+  }
+
+  #description {
+    font-size: 2.25vw;
+    padding-left: 2vw;
+  }
+
+  #text {
+    line-height: normal;
+  }
+
+  #footer {
+    font-size: 3.5vw;
+    padding-bottom: 2vw;
   }
 }
 </style>

@@ -51,7 +51,7 @@ export default {
 }
 
 #work-block:hover {
-  background-position: center; /* Center the image */
+  background-position: center;
   background-size: 150%;
   background-repeat: no-repeat;
 }
@@ -69,7 +69,7 @@ export default {
   color: white;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) and (orientation : portrait) {
   #work-container {
     display: flex;
     flex-direction: column;
@@ -97,7 +97,7 @@ export default {
   .block-multiline {
     padding-left: 0vw;
     position: relative;
-    font-size: 15vw;
+    font-size: 12.5vw;
     width: 85%;
     /* background-color: red; */
   }
@@ -105,6 +105,16 @@ export default {
   .block-multiline span {
     background-color: black;
     color: white;
+  }
+}
+
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (orientation : landscape) {
+  #work-block {
+    width: 25vw;
   }
 }
 </style>

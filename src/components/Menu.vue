@@ -144,7 +144,7 @@ export default {
   cursor: pointer !important;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) and (orientation : portrait) {
   #menu {
     height: 62.5vh;
   }
@@ -172,6 +172,21 @@ export default {
     text-transform: uppercase;
     visibility: hidden;
     opacity: 0; */
+  }
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (orientation : landscape) {
+
+  #menu-img {
+    width: 50vw;
+    height: auto;
+  }
+
+  #menu-nav {
+    font-size: 5.125vw;
   }
 }
 
