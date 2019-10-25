@@ -360,6 +360,8 @@ a:hover {
   .data-column div {
     padding-bottom: 2.5vh;
     line-height: 4vh;
+    width: auto;
+    background-color: red;
   }
 
   .data-type {
