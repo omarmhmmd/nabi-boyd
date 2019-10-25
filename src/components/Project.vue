@@ -59,8 +59,8 @@
         </div>
           <div id="description">
             <div class="data-type">INFO</div>
-            <div id="text">
-              {{projectJson.projects[thisProject].DESCRIPTION}}
+            <div id="text" v-html = "projectJson.projects[thisProject].DESCRIPTION">
+              <!-- {{projectJson.projects[thisProject].DESCRIPTION}} -->
             </div>
           </div>
       </div>
@@ -221,6 +221,7 @@ a:hover {
 .data-column div {
   padding-bottom: 2vh;
   line-height: 25px;
+  width: 15vw;
 }
 
 .data-type {
@@ -238,6 +239,7 @@ a:hover {
 #description {
   /* background-color: red; */
   width: 75vw;
+  padding-left:0vw;
   font-size: 1.75vw;
   line-height: 25px;
   /* hyphens: auto; */
@@ -248,7 +250,8 @@ a:hover {
 }
 
 .indent {
-  text-indent: 5.5vw;
+  text-indent: 3vw;
+  display: block;
 }
 
 @media only screen and (max-width: 768px) and (orientation: portrait) {
