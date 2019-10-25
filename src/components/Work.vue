@@ -5,7 +5,7 @@
         <div id="work-block" :style="{ backgroundImage: `url(${workJson.projects[1].IMAGES[0]})` }">
           <div class="block-multiline"><span>{{workJson.projects[index].NAME}}</span></div>
         </div>
-        <div id="work-block-mobile">
+        <div id="work-block-mobile" :style="{ backgroundImage: `url(${workJson.projects[1].IMAGES[4]})` }">
           <div class="block-multiline"><span>{{workJson.projects[index].NAME}}</span></div>
         </div>
       </router-link>
@@ -87,11 +87,15 @@ export default {
   #work-block-mobile {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    width: 85vw;
-    height: auto;
-    margin-bottom: 10vh;
-    background-size: 0%;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 45vh;
+    background-color: red;
+    margin-bottom: 5vh;
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .block-multiline {
@@ -99,7 +103,6 @@ export default {
     position: relative;
     font-size: 12.5vw;
     width: 85%;
-    /* background-color: red; */
   }
 
   .block-multiline span {
