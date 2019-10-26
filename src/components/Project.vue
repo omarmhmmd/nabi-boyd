@@ -70,7 +70,7 @@
 </template>
 
 <script>
-import projectJson from '../json/nabiboyd001.js'
+import projectJson from '../json/nabiboyd002.js'
 
 export default {
   data() {

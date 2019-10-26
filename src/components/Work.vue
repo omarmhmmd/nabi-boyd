@@ -2,10 +2,10 @@
   <div id="work-container">
     <div v-for = "(image, index) in workJson.projects" id="work">
       <router-link :to="{path:'/work/' + workJson.projects[index].TAG}">
-        <div id="work-block" :style="{ backgroundImage: `url(${workJson.projects[1].IMAGES[0]})` }">
+        <div id="work-block" :style="{ backgroundImage: `url(${workJson.projects[index].IMAGES[0]})` }">
           <div class="block-multiline"><span>{{workJson.projects[index].NAME}}</span></div>
         </div>
-        <div id="work-block-mobile" :style="{ backgroundImage: `url(${workJson.projects[1].IMAGES[4]})` }">
+        <div id="work-block-mobile" :style="{ backgroundImage: `url(${workJson.projects[index].IMAGES[0]})` }">
           <div class="block-multiline"><span>{{workJson.projects[index].NAME}}</span></div>
         </div>
       </router-link>
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import workJson from '../json/nabiboyd001.js'
+import workJson from '../json/nabiboyd002.js'
 
 export default {
   data() {
@@ -41,7 +41,7 @@ export default {
   align-items: center;
   justify-content: flex-start;
   width: 30vw;
-  height: 21vw;
+  height: 23vw;
   margin-bottom: 5vh;
   background-size: 0%;
 }
@@ -75,7 +75,7 @@ export default {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 5vh;
+    padding-top: 1.5vh;
     height: auto;
     padding-left: 0vw;
   }
@@ -91,7 +91,6 @@ export default {
     align-items: center;
     width: 90vw;
     height: 45vh;
-    background-color: red;
     margin-bottom: 5vh;
     background-size: 150%;
     background-position: center;
