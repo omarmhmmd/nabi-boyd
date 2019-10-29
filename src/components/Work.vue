@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import workJson from '../json/nabiboyd002.js'
+import workJson from '../json/nabiboyd001.js'
 
 export default {
   data() {

@@ -70,7 +70,7 @@
 </template>
 
 <script>
-import projectJson from '../json/nabiboyd002.js'
+import projectJson from '../json/nabiboyd001.js'
 
 export default {
   data() {
@@ -298,14 +298,17 @@ a:hover {
 
   .swiper-slide {
     display: flex;
-    align-content: center;
+    align-content: flex-start;
+    justify-content: flex-start;
   }
 
   .swiper-slide img {
-    width: 90vw;
+    width: 92vw;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
     /* padding-top: 20vh; */
   }
 
