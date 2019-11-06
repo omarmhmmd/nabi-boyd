@@ -53,17 +53,17 @@ export default {
       else if (option == 'WORK') {
         this.letterO = ''
         this.optionO = option;
-        this.hoverIn(option)
+        // this.hoverIn(option)
       }
       else if (option == 'ABOUT') {
         this.letterY = ''
         this.optionY = option;
-        this.hoverIn(option)
+        // this.hoverIn(option)
       }
       else if (option == 'CONTACT') {
         this.letterD = ''
         this.optionD = option;
-        this.hoverIn(option)
+        // this.hoverIn(option)
       }
     },
     mouseleave: function(letter,option){
@@ -74,17 +74,17 @@ export default {
       else if (letter == 'O') {
         this.letterO = letter
         this.optionO = ''
-        this.hoverOut(option)
+        // this.hoverOut(option)
       }
       else if (letter == 'Y') {
         this.letterY = letter
         this.optionY = ''
-        this.hoverOut(option)
+        // this.hoverOut(option)
       }
       else if (letter == 'D') {
         this.letterD = letter
         this.optionD = ''
-        this.hoverOut(option)
+        // this.hoverOut(option)
       }
     }
   },
