@@ -156,7 +156,7 @@ export default {
     {
       "PROJECT": 9,
       "TAG": "courtyard-table",
-      "NAME": "COURT-YARD TABLE",
+      "NAME": "COURTYARD TABLE",
       "LOCATION": "Santa Monica, CA",
       "YEAR": 2018,
       "TYPE": "Furniture",
@@ -188,7 +188,7 @@ export default {
     {
       "PROJECT": 11,
       "TAG": "barndsall-arts-poster",
-      "NAME": "BARNS-DALL ARTS  POSTER",
+      "NAME": "BARNSDALL ARTS  POSTER",
       "LOCATION": "--",
       "YEAR": 2018,
       "TYPE": "Graphic Design",
