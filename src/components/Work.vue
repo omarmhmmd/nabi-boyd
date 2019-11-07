@@ -3,10 +3,10 @@
     <div v-for = "(image, index) in workJson.projects" id="work">
       <router-link :to="{path:'/work/' + workJson.projects[index].TAG}">
         <div id="work-block" :style="{ backgroundImage: `url(${workJson.projects[index].IMAGES[0]})` }">
-          <div class="block-multiline"><span>{{workJson.projects[index].NAME}}</span></div>
+          <div class="block-multiline"><span v-html = "workJson.projects[index].NAME"></span></div>
         </div>
         <div id="work-block-mobile" :style="{ backgroundImage: `url(${workJson.projects[index].IMAGES[0]})` }">
-          <div class="block-multiline"><span>{{workJson.projects[index].NAME}}</span></div>
+          <div class="block-multiline"><span v-html = "workJson.projects[index].NAME"></span></div>
         </div>
       </router-link>
     </div>
@@ -40,7 +40,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 30vw;
+  width: 32vw;
   height: 23vw;
   margin-bottom: 5vh;
   background-size: 0%;

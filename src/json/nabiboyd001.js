@@ -204,7 +204,7 @@ export default {
     {
       "PROJECT": 12,
       "TAG": "letterforms",
-      "NAME": "LETTER-FORMS",
+      "NAME": "LETTER FORMS",
       "LOCATION": "--",
       "YEAR": "Ongoing",
       "TYPE": "Graphic Design",
