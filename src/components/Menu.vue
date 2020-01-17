@@ -94,7 +94,7 @@ export default {
 
 <style lang="css">
 #menu {
-  background-color: red;
+  /* background-color: red; */
   height: auto;
   display: flex;
   justify-content: center;
