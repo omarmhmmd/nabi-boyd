@@ -19,7 +19,17 @@ export default {
         "/images/projects/shepardmesahouse/006.jpg",
         "/images/projects/shepardmesahouse/007.jpg",
         "/images/projects/shepardmesahouse/008.jpg",
-        "/images/projects/shepardmesahouse/009.jpg"
+        "/images/projects/shepardmesahouse/009.jpg",
+        "/images/projects/shepardmesahouse/010.jpg",
+        "/images/projects/shepardmesahouse/011.jpg",
+        "/images/projects/shepardmesahouse/012.jpg",
+        "/images/projects/shepardmesahouse/013.jpg",
+        "/images/projects/shepardmesahouse/014.jpg",
+        "/images/projects/shepardmesahouse/015.jpg",
+        "/images/projects/shepardmesahouse/016.jpg",
+        "/images/projects/shepardmesahouse/017.jpg",
+        "/images/projects/shepardmesahouse/018.jpg",
+        "/images/projects/shepardmesahouse/019.jpg"
       ]
     },
     {
