@@ -220,7 +220,7 @@ a:hover {
 
 .data-column div {
   padding-bottom: 2vh;
-  line-height: 25px;
+  line-height: 3vh;
   width: 15vw;
 }
 

@@ -53,7 +53,10 @@ export default {
         './images/LOG/036.jpg',
         './images/LOG/037.jpg',
         './images/LOG/038.jpg',
-        './images/LOG/039.jpg'
+        './images/LOG/039.jpg',
+        './images/LOG/040.jpg',
+        './images/LOG/041.jpg',
+        './images/LOG/042.jpg'
       ],
       selectedImage: ''
     }
@@ -71,7 +74,8 @@ export default {
     } else {
       // console.log("no match");
     }
-    // this.interval = setInterval(() => this.changeImage(), 5000);
+    // home log slideshow
+    // this.interval = setInterval(() => this.changeImage(), 1000);
   },
   methods: {
     changeImage(event) {
