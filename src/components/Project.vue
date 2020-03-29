@@ -251,7 +251,7 @@ a:hover {
   /* padding-left:0vw; */
   /* font-size: 1.75vw; */
   line-height: 30px;
-  /* hyphens: auto; */
+  hyphens: manual;
 }
 
 #text {
