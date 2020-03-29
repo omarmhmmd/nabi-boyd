@@ -65,8 +65,11 @@ export default {
     font-size: 2vw;
     width: 61vw;
     padding-top: 7.5vh;
-    hyphens: manual;
-    /* height: 100vh; */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;    /* height: 100vh; */
   }
 
   #info-nest {

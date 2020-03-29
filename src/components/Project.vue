@@ -251,7 +251,11 @@ a:hover {
   /* padding-left:0vw; */
   /* font-size: 1.75vw; */
   line-height: 30px;
-  hyphens: manual;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;    /* height: 100vh; */
 }
 
 #text {
@@ -346,6 +350,11 @@ a:hover {
     /* font-size: 1.75vw; */
     line-height: auto;
     /* hyphens: auto; */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;    /* height: 100vh; */
   }
 
   .indent {
