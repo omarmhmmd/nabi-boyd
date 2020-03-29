@@ -65,6 +65,7 @@ export default {
     font-size: 2vw;
     width: 61vw;
     padding-top: 7.5vh;
+    hyphens: auto;
     /* height: 100vh; */
   }
 
