@@ -339,10 +339,13 @@ a:hover {
     flex-direction: column;
   }
 
-  #description {
+  #data-p {
+    /* background-color: red; */
     width: 90vw;
-    font-size: 6vw;
-    /* line-height: 30px; */
+    /* padding-left:0vw; */
+    /* font-size: 1.75vw; */
+    line-height: auto;
+    /* hyphens: auto; */
   }
 
   .indent {
@@ -422,10 +425,6 @@ and (orientation : landscape) {
     font-size: 2.25vw;
   }
 
-  #description {
-    font-size: 2.25vw;
-    padding-left: 2vw;
-  }
 
   #text {
     line-height: normal;
