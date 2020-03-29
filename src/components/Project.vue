@@ -59,7 +59,7 @@
         </div>
           <div id="description">
             <div class="data-type">INFO</div>
-            <div id="text" v-html = "projectJson.projects[thisProject].DESCRIPTION">
+            <div class="data-type-info" id = "data-p" v-html = "projectJson.projects[thisProject].DESCRIPTION">
               <!-- {{projectJson.projects[thisProject].DESCRIPTION}} -->
             </div>
           </div>
@@ -123,6 +123,13 @@ export default {
 a:hover {
   cursor: pointer;
 }
+
+#project-info {
+  /* background-color: green; */
+  padding-top: 1vh;
+  /* padding-bottom: 5vh; */
+}
+
 #project-container {
   display: flex;
   justify-content: center;
@@ -201,10 +208,6 @@ a:hover {
   font-size: 2.25vw;
 }
 
-#project-info {
-  padding-bottom: 5vh;
-}
-
 #data {
   display: flex;
   width: 17.5vw;
@@ -219,34 +222,40 @@ a:hover {
 }
 
 .data-column div {
-  padding-bottom: 2vh;
-  line-height: 3vh;
+  /* padding-bottom: 2vh; */
+  /* line-height: 25px; */
   width: 15vw;
 }
 
 .data-type {
+  /* display: inline;
+  background-color: black;
+  color: white;
+  padding: 0 3.5px 0 3.5px;
+  font-size: 1.5vw; */
+  font-size: 1.5vw;
   display: inline;
   background-color: black;
   color: white;
   padding: 0 3.5px 0 3.5px;
-  font-size: 1.5vw;
 }
 
 .data-type-info {
   font-size: 1.75vw;
+  margin: 0.5vw 0 1vw 0;
 }
 
-#description {
+#data-p {
   /* background-color: red; */
   width: 75vw;
-  padding-left:0vw;
-  font-size: 1.75vw;
-  line-height: 25px;
+  /* padding-left:0vw; */
+  /* font-size: 1.75vw; */
+  line-height: 30px;
   /* hyphens: auto; */
 }
 
 #text {
-  line-height: normal;
+  /* line-height: normal; */
 }
 
 .indent {
