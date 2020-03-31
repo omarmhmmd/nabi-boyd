@@ -193,7 +193,7 @@ a:hover {
 
 .swiper-pagination {
   text-align: right;
-  font-size: 2vw;
+  font-size: 2vw !important;
 }
 
 .swiper-slide img {

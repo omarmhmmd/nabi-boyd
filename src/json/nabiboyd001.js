@@ -137,7 +137,7 @@ export default {
     "YEAR": "2018 – Ongoing",
     "TYPE": "Residential",
     "SIZE": "1300 SF",
-    "SITEAREA": "",
+    "SITEAREA": "--",
     "CLIENT": "Private",
     "DESCRIPTION": "Pacific Ave Remodel is a renovation of an existing 1978 condominium overlooking the entrance to the Marina Del Rey harbor. The one-bedroom condo becomes a one-and-a-half bedroom with the addition of a custom built-in murphy bed. A large swing-door conceals the fold-out bed and transforms into a wall when open. New guardrails, finishes, lighting, and flooring are designed throughout with a nod to the character of the building and site.",
     "IMAGES": [
