@@ -250,7 +250,7 @@ a:hover {
   width: 75vw;
   /* padding-left:0vw; */
   /* font-size: 1.75vw; */
-  line-height: 30px;
+  line-height: normal;
   /* hyphens: auto; */
 }
 
