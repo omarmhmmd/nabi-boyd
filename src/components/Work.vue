@@ -34,6 +34,8 @@ export default {
   padding-top: 5vh;
   height: auto;
   padding-left: 3.5vw;
+  /* background-color: green; */
+  width: 100vw;
 }
 
 #work-block {

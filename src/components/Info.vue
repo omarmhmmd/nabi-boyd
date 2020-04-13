@@ -63,7 +63,7 @@ export default {
     justify-content: center;
     flex-direction: column;
     font-size: 2vw;
-    width: 61vw;
+    width: 100vw;
     padding-top: 7.5vh;
     /* height: 100vh; */
   }
