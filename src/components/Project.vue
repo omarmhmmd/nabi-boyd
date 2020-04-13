@@ -289,7 +289,7 @@ a:hover {
 
   .swiper-pagination {
     text-align: right;
-    font-size: 3vh;
+  font-size: 3.75vh !important;
   }
 
   #project-title {

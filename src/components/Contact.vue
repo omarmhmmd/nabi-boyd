@@ -1,19 +1,22 @@
 <template lang="html">
   <div id="contact-container">
     <div id="contact">
-      <a target="_blank" href="https://www.google.com/maps/place/Nabi+Boyd/@34.0184119,-118.4826625,15z/data=!4m5!3m4!1s0x0:0x8db0979805b32c93!8m2!3d34.0181629!4d-118.4790576">
+      <!-- <a target="_blank" href="https://www.google.com/maps/place/Nabi+Boyd/@34.0184119,-118.4826625,15z/data=!4m5!3m4!1s0x0:0x8db0979805b32c93!8m2!3d34.0181629!4d-118.4790576"> -->
         <div id = "address">
           <div id = "text"><span>NABI BOYD</span></div>
-          <div><span>1804 14th St., Suite 7</span></div>
-          <div><span>Santa Monica, CA</span></div>
+          <div><span>LOS ANGELES &</span></div>
+          <div><span>SANTA BARBARA</span></div>
         </div>
-      </a>
+      <!-- </a> -->
       <!-- <div id="internet"> -->
       <a href="mailto: info@nabiboyd.com">
         <div id = "email"><span>info@nabiboyd.com</span></div>
       </a>
+      <a target="_blank"href="tel:323-412-0364">
+        <div id = "email"><span>323-412-0364</span></div>
+      </a>
       <a target="_blank" href="https://www.instagram.com/nabiboyd/">
-        <div id = "instagram"><span>@nabiboyd</span></div>
+        <div id = "email"><span>@nabiboyd</span></div>
       </a>
       <!-- </div> -->
     </div>
