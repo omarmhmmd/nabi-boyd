@@ -35,6 +35,7 @@ export default {
   height: auto;
   padding-left: 3.5vw;
   /* background-color: green; */
+  align-items: center;
   width: 100vw;
 }
 

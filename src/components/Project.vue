@@ -127,7 +127,7 @@ a:hover {
 #project-info {
   /* background-color: green; */
   padding-top: 1vh;
-  /* padding-bottom: 5vh; */
+  padding-bottom: 5vh;
 }
 
 #project-container {
