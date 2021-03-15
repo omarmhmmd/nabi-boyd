@@ -33,6 +33,31 @@ export default {
       "/images/projects/shepardmesahouse/019.jpg"
     ]
   },
+	{
+    "PROJECT": 7,
+    "TAG": "pacific-ave-remodel",
+    "NAME": "PACIFIC AVE REMODEL",
+    "LOCATION": "Playa Del Rey, CA",
+    "YEAR": "2020",
+    "TYPE": "Residential",
+    "SIZE": "1300 SF",
+    "SITEAREA": "--",
+    "CLIENT": "Private",
+    "DESCRIPTION": "Pacific Ave Remodel is a renovation of an existing 1978 condominium overlooking the entrance to the Marina Del Rey harbor. The one-bedroom condo becomes a one-and-a-half bedroom with the addition of a custom built-in murphy bed. A large swing-door conceals the fold-out bed and transforms into a wall when open. New guardrails, finishes, lighting, and flooring are designed throughout with a nod to the character of the building and site.",
+    "IMAGES": [
+      "/images/projects/pacificaveremodel/001.jpg",
+      "/images/projects/pacificaveremodel/002.jpg",
+      "/images/projects/pacificaveremodel/003.jpg",
+      "/images/projects/pacificaveremodel/004.jpg",
+      "/images/projects/pacificaveremodel/005.jpg",
+      "/images/projects/pacificaveremodel/006.jpg",
+      "/images/projects/pacificaveremodel/007.jpg", 
+      "/images/projects/pacificaveremodel/008.jpg",
+      "/images/projects/pacificaveremodel/009.jpg",
+      "/images/projects/pacificaveremodel/010.jpg",
+      "/images/projects/pacificaveremodel/011.jpg"         
+    ]
+  },
   {
     "PROJECT": 2,
     "TAG": "kno-beverage-house",
@@ -127,23 +152,6 @@ export default {
     "DESCRIPTION": "Three Ventura Houses sit towards the end of a dead-end street against the steep southern edge of the Ventura Valley. This historic side of town consists of mostly small Spanish style bungalows from the 40s and industrial buildings from Ventura's oil drilling past. The three homes replace two aging structures on the lot, thoughtfully increasing density in an area with a need for additional housing and a desire to leave the surrounding open space undeveloped.<br><br>Each of the three houses is a three-bedroom, two-bath, single-family home with a private roof garden. Setback yards between the homes create areas for landscape and private entrances. Large picture windows maximize daylight and integrate full-height sliding panels that reveal hidden open air balconets. Corrugated siding is occasionally cut at a bias creating rippled edges invoking the shadows and profiles of the Spanish tile roofs around.",
     "IMAGES": [
       "/images/projects/threeventurahouses/001.jpg"
-    ]
-  },
-  {
-    "PROJECT": 7,
-    "TAG": "pacific-ave-remodel",
-    "NAME": "PACIFIC AVE REMODEL",
-    "LOCATION": "Playa Del Rey, CA",
-    "YEAR": "2018 – Ongoing",
-    "TYPE": "Residential",
-    "SIZE": "1300 SF",
-    "SITEAREA": "--",
-    "CLIENT": "Private",
-    "DESCRIPTION": "Pacific Ave Remodel is a renovation of an existing 1978 condominium overlooking the entrance to the Marina Del Rey harbor. The one-bedroom condo becomes a one-and-a-half bedroom with the addition of a custom built-in murphy bed. A large swing-door conceals the fold-out bed and transforms into a wall when open. New guardrails, finishes, lighting, and flooring are designed throughout with a nod to the character of the building and site.",
-    "IMAGES": [
-      "/images/projects/pacificaveremodel/001.jpg",
-      "/images/projects/pacificaveremodel/002.jpg",
-      "/images/projects/pacificaveremodel/003.jpg"
     ]
   },
   {
