@@ -201,30 +201,6 @@ export default {
       "/images/projects/loopclip/001.jpg",
       "/images/projects/loopclip/002.jpg"
     ]
-  },
-  {
-    "PROJECT": 11,
-    "TAG": "letterforms",
-    "NAME": "LETTER-FORMS",
-    "LOCATION": "--",
-    "YEAR": "Ongoing",
-    "TYPE": "Graphic Design",
-    "SIZE": "Various",
-    "SITEAREA": "--",
-    "CLIENT": "--",
-    "DESCRIPTION": "A series of ongoing letterform experiments for various projects.",
-    "IMAGES": [
-      "/images/projects/letterforms/001.jpg",
-      "/images/projects/letterforms/002.jpg",
-      "/images/projects/letterforms/003.jpg",
-      "/images/projects/letterforms/004.jpg",
-      "/images/projects/letterforms/005.jpg",
-      "/images/projects/letterforms/006.jpg",
-      "/images/projects/letterforms/007.jpg",
-      "/images/projects/letterforms/008.jpg",
-      "/images/projects/letterforms/009.jpg",
-      "/images/projects/letterforms/010.jpg"
-    ]
   }
 ]
 }
