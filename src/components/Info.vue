@@ -34,6 +34,9 @@
 				<br>
 				<ul>
 					<li>
+						• Nabi Boyd receives a <a target="_blank" href="https://www.aialosangeles.org/awards/design-awards/next-la-winners-2021/">2021 AIA, NEXT LA Residential Architecture Award for Los Osos Grandma's House.</a>
+					</li>
+					<li>
 						• Nabi Boyd receives a <a target="_blank" href="https://www.aialosangeles.org/awards/residential-architecture-awards/residential-architecture-award-winners-2021/">2021 AIA, LA Residential Architecture Award for Shepard Mesa House.</a>
 					</li>
 					<li>
@@ -41,9 +44,6 @@
 					</li>
 					<li>
 						• Tailored in Steel interview with <a target="_blank" href="https://suprstructur.com/inside-stories/tailored-in-steel/">SUPRSTRUCTUR</a>.
-					<li>
-						• Nabi Boyd receives a <a target="_blank" href="https://www.aialosangeles.org/awards/design-awards/next-la-winners-2021/">2021 AIA, NEXT LA Residential Architecture Award for Los Osos Grandma's House.</a>
-					</li>
 					</li>
 				</ul>
 			
