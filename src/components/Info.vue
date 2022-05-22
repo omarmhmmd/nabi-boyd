@@ -45,6 +45,9 @@
 					<li>
 						• Tailored in Steel interview with <a target="_blank" href="https://suprstructur.com/inside-stories/tailored-in-steel/">SUPRSTRUCTUR</a>.
 					</li>
+          <li>
+            • Nabi Boyd announced as the <a target="_blank" href="https://www.archpaper.com/2021/12/announcing-the-winners-of-the-2021-an-best-of-design-awards/"> 2021 Best of Design, Young Architects </a> winner by The Architect's Newspaper.
+          </li>
 				</ul>
 			
       </div>

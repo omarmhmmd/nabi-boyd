@@ -12,9 +12,6 @@
       <a href="mailto: info@nabiboyd.com">
         <div id = "email"><span>info@nabiboyd.com</span></div>
       </a>
-      <a target="_blank" href="tel:323-412-0364">
-        <div id = "email"><span>323-412-0364</span></div>
-      </a>
       <a target="_blank" href="https://www.instagram.com/nabiboyd/">
         <div id = "email"><span>@nabiboyd</span></div>
       </a>
